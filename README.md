@@ -11,3 +11,4 @@ Personal Portfolio built with Ruby on Rails, to showcase my projects and a short
 * RubyRails - framework for Ruby
 * SASS 
 * Semantic UI
+* Heroku
