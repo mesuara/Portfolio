@@ -20,7 +20,7 @@
     <div id="categories">
 
     <a class="linksmain" id="about" href="/abouts">About</a>
-       <a class="linksmain" id="pro" href="/projects">Projects</a>
+       <a class="linksmain" id="reload" href="/projects">Projects</a>
        </div>
        </div>
     
@@ -60,5 +60,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
   
+  <script>
+ 
+ document.getElementById('reload').addEventListener('click', (e)=>{
+            window.location.reload()
+        })
+  </script>
+
+
   </body>
 </html>
