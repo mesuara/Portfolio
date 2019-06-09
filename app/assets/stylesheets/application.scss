@@ -135,7 +135,11 @@ div .welcome{
     font-size: 25px;
     
 }
-
+.ui.top.fixed.menu{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
 
   
   /* The typing effect */
@@ -152,4 +156,8 @@ div .welcome{
 
   .hidee{
       display: none;
+  }
+
+  .pusher{
+      margin-top: 350px;
   }
