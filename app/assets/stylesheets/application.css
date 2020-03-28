@@ -258,4 +258,15 @@ div .welcome {
     justify-content: space-evenly;
   }
 
+  #me {
+    width: 300px;
+    height: 300px;
+  }
+  #myname{
+    font-size: 40px;
+  }
+  #image {
+    width: 305px;
+    height: 305px;
+  }
 }
