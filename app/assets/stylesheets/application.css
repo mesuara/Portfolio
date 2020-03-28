@@ -249,13 +249,15 @@ div .welcome {
     flex-direction: column;
   }
   #maindiv{
+    width: auto;
     flex-direction: column;
   }
   .phone-none{
     display: none;
   }
   div .welcome{
-    justify-content: space-evenly;
+    width: auto;
+    justify-content: center;
   }
 
   #me {
