@@ -154,7 +154,7 @@ body {
 
 #aboutme {
   font-size: 20px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .imgicon {
@@ -242,3 +242,20 @@ div .welcome {
   display: none;
 }
 /*# sourceMappingURL=application.css.map */
+
+@media(max-width:600px){
+  #maincontent{
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  #maindiv{
+    flex-direction: column;
+  }
+  .phone-none{
+    display: none;
+  }
+  div .welcome{
+    justify-content: space-evenly;
+  }
+
+}
