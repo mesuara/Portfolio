@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-body {
+/* body {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,25 +104,25 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 270px;
-}
+} */
 
-#myname {
+/* #myname {
   font-size: 60px;
-  overflow: hidden;
+  overflow: hidden; */
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange;
+  /* border-right: .15em solid orange; */
   /* The typwriter cursor */
-  white-space: nowrap;
+  /* white-space: nowrap; */
   /* Keeps the content on a single line */
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
+  /* letter-spacing: .15em; */
   /* Adjust as needed */
-  -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  /* -webkit-animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
           animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
+} */
 
-#title {
+/* #title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,14 +150,14 @@ body {
 .linksmain {
   font-size: 30px;
   padding: 5px;
-}
+} */
 
-#aboutme {
+/* #aboutme {
   font-size: 20px;
-  /* padding: 20px; */
-}
 
-.imgicon {
+} */
+
+/* .imgicon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +200,7 @@ div .welcome {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-}
+} */
 
 /* The typing effect */
 @-webkit-keyframes typing {
@@ -221,7 +221,7 @@ div .welcome {
 }
 
 /* The typewriter cursor effect */
-@-webkit-keyframes blink-caret {
+/* @-webkit-keyframes blink-caret {
   from, to {
     border-color: transparent;
   }
@@ -236,14 +236,14 @@ div .welcome {
   50% {
     border-color: gray;
   }
-}
-
+} */
+/* 
 .hidee {
   display: none;
-}
+} */
 /*# sourceMappingURL=application.css.map */
 
-@media(max-width:600px){
+/* @media(max-width:600px){
   #maincontent{
     padding-top: 20px;
     flex-direction: column;
@@ -271,4 +271,225 @@ div .welcome {
     width: 305px;
     height: 305px;
   }
+} */
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
+
+#maindiv{
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height:auto;
+}
+
+#maincontent {
+  padding:10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#image{
+  border-radius: 50%;
+  width: 510px;
+  height: 510px;
+  background: gray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#me{
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  margin-left:5px;
+  
+}
+
+div .welcome{
+   
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding:10px;
+  font-size: 35px;
+  width: 85%;
+  
+  
+}
+
+
+.ui.top.menu {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icons{
+  padding:10vh;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+#myname{
+  font-size: 80px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* border-right: .15em solid orange; The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+#aboutme{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pusher{
+  width: 80%;
+}
+
+.galle{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.hexagon {
+	display: inline-block;
+	overflow: hidden;
+	visibility: hidden;
+  transform: rotate(120deg);
+}
+
+.hexagon-in1, .hexagon-in2 {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 100%;
+  transform: rotate(-60deg);
+}
+
+.hexagon-in2 {
+	overflow: hidden;
+	visibility: visible;
+	background-color: rgba(46, 46, 46, 1);
+}
+
+
+
+.thumbnail {
+  cursor: pointer;
+  transition: transform 0.15s cubic-bezier(0.14, 0.56, 0.35, 0.97);
+  -webkit-filter: grayscale(1);
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+  -webkit-filter: grayscale(0);
+}
+
+
+
+.thumbnail {
+	height: 100%;
+}
+
+
+
+.gallery-hex {
+  margin-top: 20vh;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+	width: 100%;
+  min-width: 314px;
+  justify-content: center;
+	/* margin: 9% auto 90px; */
+  padding-left: 2%;
+}
+
+.gallery-hex .wrapper {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	width: 12%;
+  /* margin: -5.3% 0.13% 0; */
+  margin: -6.75% -1% 4% 1.7%;
+}
+
+.gallery .wrapper {
+	width: 29%;
+	min-width: 100px;
+	margin: 2%  1.6%;
+}
+
+.gallery .hexagon a {
+	border: none;
+	margin: 0;
+}
+
+.gallery-hex .wrapper:after {
+	padding-top: 116%;
+	display: block;
+	content: '';
+}
+
+.gallery-hex .wrapper:hover {
+	z-index: 100;
+}
+
+.gallery-hex .hexagon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+/* .gallery-hex .wrapper:nth-child(8) {
+  margin: -3.3% .3% 0;
+  margin-left: 6.4%;
+} */
+  /* margin-left: 6.75%; */
+
+
+
+
+
+
+
+  /* The typing effect */
+  @keyframes typing {
+    
+    from { width: 0 ;
+      border-right: .15em solid orange;}
+    to { width: 100% ;
+      border-right: .15em solid gray;
+
+    }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: gray; }
+  
+  }
