@@ -528,4 +528,7 @@ div .welcome{
     width: 255px;
     height: 255px;
   }
+  #title {
+    width: 100%;
+  }
 }
