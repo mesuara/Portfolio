@@ -493,3 +493,39 @@ div .welcome{
     50% { border-color: gray; }
   
   }
+
+  @media(min-width:320px){
+  #maincontent{
+    padding-top: 20px;
+    flex-direction: column;
+  }
+  #maindiv{
+    width: auto;
+    flex-direction: column;
+  }
+  .phone-none{
+    display: none;
+  }
+  div .welcome{
+    width: 100%;
+    justify-content: center;
+  }
+  .ui.top.menu{
+    width: 100%;
+  }
+  #me {
+    width: 250px;
+    height: 250px;
+  }
+  #name{
+    text-align: center;
+  }
+  #myname{
+    font-size: 40px;
+    width: auto;
+  }
+  #image {
+    width: 255px;
+    height: 255px;
+  }
+}
