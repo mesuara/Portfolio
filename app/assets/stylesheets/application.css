@@ -494,7 +494,7 @@ div .welcome{
   
   }
 
-  @media(min-width:320px){
+  @media(min-width:320px)and (max-width:700px){
   #maincontent{
     padding-top: 20px;
     flex-direction: column;
